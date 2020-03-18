@@ -1,28 +1,40 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Brandon Bringhurst About Page</title>
-    <!-- Linking CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
-<body>
-<header class="HeaderMain">
-    <h1 class="HeaderText">Brandon Bringhurst</h1>
-        <nav>
-            <h5 class="AboutLink">About</h6>
-            <h5 class="PortfolioLink">Portfolio</h6>
-            <h5 class="ContactLink">Contact</h6>
-        </nav>
-</header>
-    <div id="SubBox">
-        <h1 class="PageHeader">About Me</h1>
-        <img id="ProfilePic" src="assets/images/11.jpeg" alt="Profile Picture">
-            <div class="main text">
-                <main>
-                    Once I was Peter Pan.<br><br> I flew around the stage and I thought I was on top of the world, and I was able to tell a timeless story.  However, I really was just attatched to a cable that flew me around on the stage.  But for the kids watching, it was pure magic, and that is was made it worth it to me.<br><br>That is how I can describe my journey with coding.  Computers are magic, and even if not everyone knows exactly how it works, It still is amazing that I can take a small part to make that happen.  I live in Utah, have always loved it, and I am happily married to my wife Justine.  
-                </main>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Zelda Word Game!</title>
+
+
+    </head>
+    <body onload="Gamereset()">
+        <header>
+            <div class= "TitleBox">
+                <img class= "LinkImage" src ="assets/images/link.png">
+                <img class= "MainImage" src="assets/images/zeldatitle.png">
+                <img class= "GanonImage" src ="assets/images/ganon.png">
             </div>
-    </div>
-</body>
+        <h1 class="TitleText"></h1>
+       </header>
+        <h2 class= "InstructText">Press any key to get started!</h2>
+        <h2 id="Win-Counter">Wins: 0</h2>
+        <h2 id ="Puzzle-Text"></h2>
+        <h2 id = "Lives-Text">Lives Left: 6</h2>
+        <h2 id = "Wrong-Guesses">Wrong guesses: <br></h2>
+
+
+    <script src="assets/javascript/game.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+
+
+    
+    </body>
 </html>
