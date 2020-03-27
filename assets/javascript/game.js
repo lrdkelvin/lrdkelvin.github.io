@@ -1,3 +1,5 @@
+
+
 //starting with all the variables I will need
 
 wins = 0;
@@ -88,15 +90,15 @@ function wintest() {
         alert("you win the game!");
         wins++;
         $("#wins").text("Wins: " + wins);
-        totalnumber = -5;
+        totalnumber = 0;
 
         reset();
     } else if (totalnumber > randomnumber) {
         alert( "you lose!")
         losses++;
-        totalnumber = -5;
+        totalnumber = 0;
         $("#losses").text("Losses: " + losses)
         reset();
     }
-}
+};
 
