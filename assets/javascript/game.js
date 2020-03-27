@@ -93,6 +93,7 @@ function wintest() {
         totalnumber = 0;
 
         reset();
+        console.log (totalnumber);
     } else if (totalnumber > randomnumber) {
         alert( "you lose!")
         losses++;
