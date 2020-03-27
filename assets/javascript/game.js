@@ -100,6 +100,7 @@ function wintest() {
         totalnumber = 0;
         $("#losses").text("Losses: " + losses)
         reset();
+        console.log(totalnumber);
     }
 };
 
