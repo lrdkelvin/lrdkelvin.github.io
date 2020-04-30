@@ -1,0 +1,16 @@
+.ratings {
+    float: left;
+    width: 32%;
+}
+
+.container-box {
+    margin: auto;
+    width: 32%;
+    border: 3px solid green;
+    padding: 10px;
+    float: left;
+}
+
+.btn-success {
+    margin: 10px;
+}

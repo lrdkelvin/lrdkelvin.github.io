@@ -1,68 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <title>Crystal Collector</title>
-        <meta charset="UTF-8">
-        <meta name= "viewport" type ="width-device-width, initial-scale=1.0">
-
+        <title>Example</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel= "stylesheet" href= "style.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="assets/css/reset.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-
-
-
     </head>
-    <body onload="reset()">
-        <header class= "jumbotron"> Crystals Collector!</header>
-        <div class="p-box">
+    <body>
+        <h1 class = "jumbotron">Select one of the options to populate the page with gifs!</h1>
 
-            <p class="text-left">
-                You will be given a random number at the start of the game. <br>
-                <br>
-                There are four crystals below. By clicking on a crystal you will add
-                a specific amount of points to your total score.<br>
-                <br>
-                You win the game by matching your total score to the random number,
-                and you lose the game if your total score goes above the random number.<br>
-                <br>
-                The value of each crystal is hidden from you until you click on it.<br>
-                <br>
-                Each time when the game starts, the game will change the value of 
-                each crystal.  Good luck and happy collecting!<br>
-
-            </p>
-        </div>
-
-        <div class="randombox">
-            <div id="randomnumber"></div>
-        </div>
-
-        <div class="winlossbox">
-            <div id="wins">Wins: 0</div>
-            <br>
-            <div id="losses">Losses: 0</div>
-
-        </div>
-        <img class= "redcrystal" id ="red" src= "assets/images/red.jpg">
-        <img class = "bluecrystal" id = "blue" src= "assets/images/blue.jpg">
-        <img class = "greencrystal" id = "green" src= "assets/images/green.jpg">
-        <img class = "yellowcrystal" id = "yellow" src= "assets/images/yellow.jpg">
-
-        <div class="scoreboxes">
-
-        <div class="smalltotalscorebox">
-            <p class= "scoretext">Your total score is:</p>
-        </div>
-        <div class="bigtotalscorebox">
-            <div id= "totalscore">0</div>
-        </div>
-        
-
-
-        <script type = "text/javascript" src = "assets/javascript/game.js"></script>    
-    </body>
-
+        <div id = "buttons">
     
-    </script>
+        </div>
+
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Search for a new type of gif! (i.e. cars)</label>
+              <input type="text" name = "searchtext" class="form-control" id="userinput" aria-describedby="emailHelp">
+              
+              
+            </div>
+            
+          </form>
+          <input id= "submitButton" text="search" value= "Submit" class="btn btn-primary">
+
+          
+
+        <div id= "images">
+            
+        </div>
+            
+<script type="text/javascript">
+  
+</script>
+    </body>
+    
+    <script src = "giphy.js"></script>
 </html>
